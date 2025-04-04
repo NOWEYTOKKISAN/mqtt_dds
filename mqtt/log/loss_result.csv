@@ -1,0 +1,2 @@
+total_sent,total_received,loss_count,loss_rate(%)
+1000,999,1,0.1

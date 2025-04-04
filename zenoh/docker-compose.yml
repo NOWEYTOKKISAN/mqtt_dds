@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  zenoh-pub:
+    build:
+      context: .
+    container_name: zenoh-pub
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    command: python zenohPub.py
+    networks:
+      - zenoh-net
+
+  zenoh-sub:
+    build:
+      context: .
+    container_name: zenoh-sub
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    command: python zenohSub.py
+    networks:
+      - zenoh-net
+
+  zenoh-pub-cpu:
+    build:
+      context: .
+    container_name: zenoh-pub-cpu
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    command: python pub_cpu_logger.py
+    networks:
+      - zenoh-net
+
+  zenoh-sub-cpu:
+    build:
+      context: .
+    container_name: zenoh-sub-cpu
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    command: python sub_cpu_logger.py
+    networks:
+      - zenoh-net
+
+networks:
+  zenoh-net:
+    driver: bridge

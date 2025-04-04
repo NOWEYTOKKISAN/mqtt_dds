@@ -1,0 +1,65 @@
+[0.018s] Invoking command in '/media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/build/ros2_dds_experiment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/src/ros2_dds_experiment -DCMAKE_INSTALL_PREFIX=/media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install
+[0.059s] -- The C compiler identification is GNU 11.4.0
+[0.097s] -- The CXX compiler identification is GNU 11.4.0
+[0.104s] -- Detecting C compiler ABI info
+[0.170s] -- Detecting C compiler ABI info - done
+[0.177s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.177s] -- Detecting C compile features
+[0.177s] -- Detecting C compile features - done
+[0.181s] -- Detecting CXX compiler ABI info
+[0.250s] -- Detecting CXX compiler ABI info - done
+[0.255s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.255s] -- Detecting CXX compile features
+[0.256s] -- Detecting CXX compile features - done
+[0.262s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.336s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.426s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.483s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.493s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.503s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.516s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.534s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.587s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.591s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.620s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.636s] -- Looking for pthread.h
+[0.702s] -- Looking for pthread.h - found
+[0.703s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.769s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.770s] -- Found Threads: TRUE  
+[0.865s] -- Configuring done
+[0.911s] -- Generating done
+[0.930s] -- Build files have been written to: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/build/ros2_dds_experiment
+[0.934s] Invoked command in '/media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/build/ros2_dds_experiment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/src/ros2_dds_experiment -DCMAKE_INSTALL_PREFIX=/media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install
+[0.935s] Invoking command in '/media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/build/ros2_dds_experiment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/build/ros2_dds_experiment -- -j2 -l2
+[0.964s] [ 25%] [32mBuilding CXX object CMakeFiles/pub_node.dir/pub_node.cpp.o[0m
+[0.967s] [ 50%] [32mBuilding CXX object CMakeFiles/sub_node.dir/sub_node.cpp.o[0m
+[2.851s] [ 75%] [32m[1mLinking CXX executable pub_node[0m
+[2.994s] [ 75%] Built target pub_node
+[4.654s] [100%] [32m[1mLinking CXX executable sub_node[0m
+[4.979s] [100%] Built target sub_node
+[4.985s] Invoked command in '/media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/build/ros2_dds_experiment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/build/ros2_dds_experiment -- -j2 -l2
+[4.990s] Invoking command in '/media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/build/ros2_dds_experiment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/build/ros2_dds_experiment
+[4.993s] -- Install configuration: ""
+[4.995s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/lib/ros2_dds_experiment/pub_node
+[5.014s] -- Set runtime path of "/media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/lib/ros2_dds_experiment/pub_node" to ""
+[5.014s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/lib/ros2_dds_experiment/sub_node
+[5.072s] -- Set runtime path of "/media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/lib/ros2_dds_experiment/sub_node" to ""
+[5.075s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ament_index/resource_index/package_run_dependencies/ros2_dds_experiment
+[5.078s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ament_index/resource_index/parent_prefix_path/ros2_dds_experiment
+[5.081s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/environment/ament_prefix_path.sh
+[5.083s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/environment/ament_prefix_path.dsv
+[5.085s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/environment/path.sh
+[5.087s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/environment/path.dsv
+[5.089s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/local_setup.bash
+[5.091s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/local_setup.sh
+[5.093s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/local_setup.zsh
+[5.096s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/local_setup.dsv
+[5.098s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/package.dsv
+[5.101s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ament_index/resource_index/packages/ros2_dds_experiment
+[5.104s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/cmake/ros2_dds_experimentConfig.cmake
+[5.106s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/cmake/ros2_dds_experimentConfig-version.cmake
+[5.108s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment/package.xml
+[5.110s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment//launch
+[5.111s] -- Installing: /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/install/share/ros2_dds_experiment//launch/ros2_dds_launch.py
+[5.114s] Invoked command in '/media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/build/ros2_dds_experiment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /media/psf/Home/대학/LAB/ROS2&MQTT/performanceComparison/build/ros2_dds_experiment

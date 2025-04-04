@@ -1,0 +1,12 @@
+version: '3.10'
+
+services:
+  dds_publisher:
+    build: .
+    command: ["python3", "ddsPub.py"]
+    volumes:
+      - ./industrial_robot_control_6G_network.csv:/dds/industrial_robot_control_6G_network.csv
+
+  dds_subscriber:
+    build: .
+    command: ["python3", "ddsSub.py"]

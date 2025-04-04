@@ -1,0 +1,64 @@
+version: "3.8"
+
+services:
+  mqtt-broker:
+    image: eclipse-mosquitto
+    container_name: mqtt-broker
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./config:/mosquitto/config
+      - ./data:/mosquitto/data
+      - ./log:/mosquitto/log
+    networks:
+      - mqtt-net  # <-- 이거 꼭 추가!!
+
+  # mqtt-pub:
+  #   build: .
+  #   container_name: mqtt-pub
+  #   command: python mqttPub.py
+  #   depends_on:
+  #     - mqtt-broker
+  #   networks:
+  #     - mqtt-net
+
+  mqtt-sub:
+    build: .
+    container_name: mqtt-sub
+    command: python mqttSub.py
+    depends_on:
+      - mqtt-broker
+    networks:
+      - mqtt-net
+   
+  pub-cpu:
+    build: .
+    container_name: pub-cpu
+    command: python pub_cpu_logger.py
+    depends_on:
+      - mqtt-broker
+    networks:
+      - mqtt-net
+
+  sub-cpu:
+    build: .
+    container_name: sub-cpu
+    command: python sub_cpu_logger.py
+    depends_on:
+      - mqtt-broker
+    networks:
+      - mqtt-net
+
+
+  mqtt-pub-csv:
+    build: .
+    container_name: mqtt-pub-csv
+    command: python mqttPub_from_csv.py
+    depends_on:
+      - mqtt-broker
+    networks:
+      - mqtt-net
+
+networks:
+  mqtt-net:
+    driver: bridge
