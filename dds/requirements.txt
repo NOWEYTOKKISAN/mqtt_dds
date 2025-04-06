@@ -2,3 +2,5 @@
 cyclonedds
 pandas
 numpy
+psutil
+matplotlib

@@ -5,8 +5,21 @@ services:
     build: .
     command: ["python3", "ddsPub.py"]
     volumes:
+      - .:/dds
       - ./industrial_robot_control_6G_network.csv:/dds/industrial_robot_control_6G_network.csv
+    working_dir: /dds
 
   dds_subscriber:
     build: .
     command: ["python3", "ddsSub.py"]
+    volumes:
+      - .:/dds
+    working_dir: /dds
+    
+  plotter:
+    build: .
+    command: ["python3", "cpu_plot.py"]
+    volumes:
+      - .:/dds
+    working_dir: /dds
+    profiles: ["manual"]
