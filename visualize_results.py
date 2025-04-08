@@ -21,27 +21,27 @@ base_path = os.path.join(os.getcwd(), args.source)
 # -------------------------------
 # 1. Latency 시각화
 # -------------------------------
-df = pd.read_csv(os.path.join(base_path, "sub_log.csv"))
-plt.figure()
-plt.plot(df["timestamp"].to_numpy(), df["latency_ms"].to_numpy())
-plt.title(f"[{args.source.upper()}] Latency Over Time")
-plt.xlabel("Time")
-plt.ylabel("Latency (ms)")
-plt.grid()
-plt.savefig(f"{args.source}_latency.png")
+#df = pd.read_csv(os.path.join(base_path, "sub_log.csv"))
+#plt.figure()
+#plt.plot(df["timestamp"].to_numpy(), df["latency_ms"].to_numpy())
+#plt.title(f"[{args.source.upper()}] Latency Over Time")
+#plt.xlabel("Time")
+#plt.ylabel("Latency (ms)")
+#plt.grid()
+#plt.savefig(f"{args.source}_latency.png")
 
 # -------------------------------
 # 2. Throughput 시각화
 # -------------------------------
-df["time_sec"] = df["timestamp"].astype(int)
-throughput = df.groupby("time_sec").size()
-plt.figure()
-throughput.plot()
-plt.title(f"[{args.source.upper()}] Throughput (msg/sec)")
-plt.xlabel("Time (s)")
-plt.ylabel("Messages")
-plt.grid()
-plt.savefig(f"{args.source}_throughput.png")
+#df["time_sec"] = df["timestamp"].astype(int)
+#throughput = df.groupby("time_sec").size()
+#plt.figure()
+#throughput.plot()
+#plt.title(f"[{args.source.upper()}] Throughput (msg/sec)")
+#plt.xlabel("Time (s)")
+#plt.ylabel("Messages")
+#plt.grid()
+#plt.savefig(f"{args.source}_throughput.png")
 
 # -------------------------------
 # 3. CPU 사용률 시각화

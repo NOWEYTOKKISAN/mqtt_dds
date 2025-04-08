@@ -23,3 +23,9 @@ services:
       - .:/dds
     working_dir: /dds
     profiles: ["manual"]
+
+networks:
+  default:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "false"
